@@ -1,0 +1,46 @@
+TASK 3 var userName = "Arya"; 
+
+function handleTask(taskName, onComplete) {
+  console.log(` User: ${userName}`);
+  console.log(` Task Received: ${taskName}`);
+  
+  setTimeout(() => {
+    console.log(` Task "${taskName}" Completed!`);
+    onComplete(); 
+  }, 2000);
+}
+
+function notifyUser() {
+  console.log(" ✔ Notification successfully sent to user.");
+}
+
+handleTask("Upload Files", notifyUser); // Changed task from "Generate Report"
+
+function scopeCheck() {
+  var globalCheck = " Original var declaration";
+  let blockLet = " Function-scope let";
+  const blockConst = " Function-scope const";
+
+  console.log("Inside Function:");
+  console.log(globalCheck); 
+  console.log(blockLet);    
+  console.log(blockConst); 
+
+  if (true) {
+    var globalCheck = " Block-level re-declared var";
+    let blockLet = " Block-scope let";
+    const blockConst = " Block-scope const";
+
+    console.log("Inside Block:");
+    console.log(globalCheck); 
+    console.log(blockLet);    
+    console.log(blockConst);  
+  }
+
+  console.log("After Block:");
+  console.log(globalCheck); 
+  console.log(blockLet);    
+  console.log(blockConst);  
+}
+
+scopeCheck();
