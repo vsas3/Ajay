@@ -1,0 +1,18 @@
+DAY 3 TASK 1 function greetUser(name, age) {
+  return `Hi ${name}, you are ${age} years old.`;
+} 
+
+function multiplyAllArguments() {
+  let result = 1;
+  for (let i = 0; i < arguments.length; i++) {
+    result *= arguments[i];
+  }
+  return result;
+}
+
+function sumAllNumbers(...nums) {
+  return nums.reduce((total, num) => total + num, 0);
+}
+console.log(greetUser("naveen", 25));                  // New name and age
+console.log(multiplyAllArguments(2, 4, 6));         // New numbers to multiply
+console.log(sumAllNumbers(1, 2, 3, 4, 5));          // New numbers to sum
