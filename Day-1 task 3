@@ -1,0 +1,79 @@
+TASK 3
+// -------------------------
+// 1. Arithmetic Operators
+// -------------------------
+
+let a = 10;
+let b = 3;
+
+console.log("Addition:", a + b);          // Output: 13
+console.log("Subtraction:", a - b);       // Output: 7
+console.log("Multiplication:", a * b);    // Output: 30
+console.log("Division:", a / b);          // Output: 3.333...
+console.log("Modulus (Remainder):", a % b); // Output: 1
+
+// -------------------------
+// 2. Assignment Operators
+// -------------------------
+
+let x = 5;
+x += 3; // x = x + 3
+console.log("x after += 3:", x);          // Output: 8
+
+x *= 2; // x = x * 2
+console.log("x after *= 2:", x);          // Output: 16
+
+// -------------------------
+// 3. Comparison Operators
+// -------------------------
+
+let num1 = 10;
+let num2 = "10";
+
+console.log("Equal (==):", num1 == num2);       // true (checks value)
+console.log("Strict Equal (===):", num1 === num2); // false (checks value + type)
+console.log("Not Equal (!=):", num1 != num2);   // false
+console.log("Greater than:", num1 > 5);         // true
+console.log("Less than:", num1 < 5);            // false
+
+// -------------------------
+// 4. Logical Operators
+// -------------------------
+
+let age = 18;
+
+console.log("AND (&&):", age > 17 && age < 30); // true
+console.log("OR (||):", age < 18 || age === 18); // true
+console.log("NOT (!):", !(age < 18));           // true
+
+// -------------------------
+// 5. Ternary Operator
+// -------------------------
+
+let mark = 75;
+let result = (mark >= 50) ? "Pass" : "Fail";
+console.log("Result:", result); // Output: Pass
+
+// -------------------------
+// 6. Bitwise Operators
+// -------------------------
+
+let p = 5;  // binary: 0101
+let q = 3;  // binary: 0011
+
+console.log("Bitwise AND (&):", p & q);   // Output: 1  (0101 & 0011 = 0001)
+console.log("Bitwise OR (|):", p | q);    // Output: 7  (0101 | 0011 = 0111)
+
+// -------------------------
+// 7. Increment/Decrement
+// -------------------------
+
+let count = 5;
+
+console.log("Post-increment (count++):", count++); // Output: 5, then count becomes 6
+console.log("After post-increment:", count);       // Output: 6
+
+console.log("Pre-increment (++count):", ++count);  // count becomes 7, then output: 7
+
+console.log("Post-decrement (count--):", count--); // Output: 7, then count becomes 6
+console.log("After post-decrement:", count);       // Output: 6
