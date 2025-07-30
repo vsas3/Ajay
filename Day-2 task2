@@ -1,0 +1,57 @@
+TASK 2// --------------------
+// Part 1: Data Types
+// --------------------
+
+// Number
+let age = 25;
+console.log("Age is:", age); // Output: 25
+
+// String
+let name = "Naveen";
+console.log("Name is:", name); // Output: Naveen
+
+// Boolean
+let isStudent = true;
+console.log("Is student:", isStudent); // Output: true
+
+// Null
+let empty = null;
+console.log("Empty value:", empty); // Output: null
+
+// Undefined
+let notDefined;
+console.log("Not defined:", notDefined); // Output: undefined
+
+// Object
+let person = {
+  firstName: "Naveen",
+  lastName: "V"
+};
+console.log("Person object:", person); // Output: { firstName: "Naveen", lastName: "V" }
+
+// Symbol
+let sym = Symbol("id");
+console.log("Symbol value:", sym); // Output: Symbol(id)
+
+
+// ----------------------------
+// Part 2: Type Conversion
+// ----------------------------
+
+// String to Number
+let strNum = "100";
+let convertedNumber = Number(strNum);
+console.log("String to Number:", convertedNumber); // Output: 100
+
+// Number to String
+let numberValue = 50;
+let convertedString = String(numberValue);
+console.log("Number to String:", convertedString); // Output: "50"
+
+// Implicit Conversion
+let result = "5" * 2; // JS converts "5" to number
+console.log('"5" * 2 =', result); // Output: 10
+
+// Invalid String to Number
+let wrongConversion = Number("abc");
+console.log('"abc" to Number:', wrongConversion); // Output: NaN (Not a Number)
