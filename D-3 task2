@@ -1,0 +1,14 @@
+TASK 2  function double(x){
+    return x * 2;
+}
+
+const doubleExp = function(x){
+    return x * 2;
+}
+
+const doubleArrow = x => x * 2;
+
+// Changed input values
+console.log(double(10));        // was 5
+console.log(doubleExp(25));     // was 15
+console.log(doubleArrow(50));   // was 30
