@@ -1,0 +1,29 @@
+DAY 2  TASK1// while loop (print 1 to 10)
+let i = 1;
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+
+// do-while loop (until correct input)
+let input;
+do {
+  input = prompt("Enter 5 to continue:");
+} while (input != 5);
+
+// for loop (sum of first N natural numbers)
+let sum = 0;
+let N = 5;
+for (let j = 1; j <= N; j++) {
+  sum += j;
+}
+console.log("Sum is:", sum);
+
+// nested for loop (multiplication table)
+for (let row = 1; row <= 5; row++) {
+  let line = "";
+  for (let col = 1; col <= 10; col++) {
+    line += (row * col) + "\t";
+  }
+  console.log(line);
+}
